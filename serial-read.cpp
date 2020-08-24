@@ -16,6 +16,6 @@ namespace serial {
 
     //%
     int available() {
-        return uBit.serial.txBufferedSize();
+        return uBit.serial.rxBufferedSize();
     }  
 }
