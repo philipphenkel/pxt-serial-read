@@ -1,6 +1,6 @@
 {
     "name": "serial-read",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Extension that exposes read with all serial modes",
     "license": "MIT",
     "dependencies": {
