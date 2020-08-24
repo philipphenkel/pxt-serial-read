@@ -13,4 +13,9 @@ namespace serial {
             return res;
         }
     }
+
+    //%
+    int available() {
+        return uBit.serial.txBufferedSize();
+    }  
 }
