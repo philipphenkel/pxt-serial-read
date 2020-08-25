@@ -7,6 +7,7 @@ const enum SerialMode {
 namespace serial {
   //% shim=serial::readChar
   export function readChar(mode: SerialMode): number  { return -1 }
+
+  //% shim=serial::available
   export function available(): number { return 0 }
-  export function isReadable(): number { return 5 }
 }

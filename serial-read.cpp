@@ -17,10 +17,5 @@ namespace serial {
     //%
     int available() {
         return uBit.serial.rxBufferedSize();
-    }  
-
-    //%
-    int isReadable() {
-        return uBit.serial.isReadable();
-    }  
+    }
 }
