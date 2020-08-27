@@ -1,7 +1,7 @@
 {
     "name": "serial-read",
     "version": "0.0.7",
-    "description": "Extension that exposes read with all serial modes",
+    "description": "Read single characters from the serial port",
     "license": "MIT",
     "dependencies": {
         "core": "*"
