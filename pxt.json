@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "serial-read.ts",
-        "serial-read.cpp"
+        "serial-read.cpp",
+        "shims.d.ts"
     ],
     "testFiles": [
         "test.ts"
