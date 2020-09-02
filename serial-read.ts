@@ -8,12 +8,12 @@ namespace serial {
 
   /**
   * Reads and returns a single character from the serial read buffer. 
-  * Returns -1 if the buffer is empty or an error occurred.
+  * Depending on the mode it returns -1 if the buffer is empty or an error occurred.
   * 
   * @param mode the read mode. eg: SerialMode.ASYNC
   * 
   *            ASYNC - A character is read from the serial read buffer if available, if there
-  *                    are no characters to be read, a value of zero is returned immediately.
+  *                    are no characters to be read, -1 is returned immediately.
   *
   *            SYNC_SPINWAIT - A character is read from the serial read buffer if available, if there
   *                            are no characters to be read, this method will spin
