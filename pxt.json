@@ -1,6 +1,6 @@
 {
     "name": "serial-read",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "Read single characters from the serial port",
     "license": "MIT",
     "dependencies": {
