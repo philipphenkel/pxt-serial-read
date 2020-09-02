@@ -12,17 +12,16 @@ namespace serial {
   * 
   * @param mode the read mode. eg: SerialMode.ASYNC
   * 
-  *            ASYNC - A character is read from the serial read buffer if available, if there
-  *                    are no characters to be read, -1 is returned immediately.
+  *            ASYNC - A character is read from the serial read buffer if available. 
+  *                    If there are no characters to be read, -1 is returned immediately.
   *
-  *            SYNC_SPINWAIT - A character is read from the serial read buffer if available, if there
-  *                            are no characters to be read, this method will spin
+  *            SYNC_SPINWAIT - A character is read from the serial read buffer if available. 
+  *                            If there are no characters to be read, this method will spin
   *                            (lock up the processor) until a character is available.
   *
-  *            SYNC_SLEEP - A character is read from the serial read buffer if available, if there
-  *                         are no characters to be read, the calling fiber sleeps
+  *            SYNC_SLEEP - A character is read from the serial read buffer if available. 
+  *                         If there  are no characters to be read, the calling fiber sleeps
   *                         until there is a character available.
-  * 
   */
   //% shim=serial::readChar
   export function readChar(mode: SerialMode): number  { return -1 }
