@@ -1,2 +1,2 @@
-const c = serial.readChar(SerialMode.ASYNC)
+const b = serial.read()
 const avail = serial.available()

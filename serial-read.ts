@@ -1,34 +1,14 @@
-const enum SerialMode {
-  ASYNC = 0,
-  SYNC_SPINWAIT = 1, 
-  SYNC_SLEEP = 2
-}
-
 namespace serial {
 
   /**
-  * Reads and returns a single character from the serial read buffer. 
-  * Depending on the mode it returns -1 if the buffer is empty or an error occurred.
-  * 
-  * @param mode the read mode. eg: SerialMode.ASYNC
-  * 
-  *            ASYNC - A character is read from the serial read buffer if available. 
-  *                    If there are no characters to be read, -1 is returned immediately.
-  *
-  *            SYNC_SPINWAIT - A character is read from the serial read buffer if available. 
-  *                            If there are no characters to be read, this method will spin
-  *                            (lock up the processor) until a character is available.
-  *
-  *            SYNC_SLEEP - A character is read from the serial read buffer if available. 
-  *                         If there  are no characters to be read, the calling fiber sleeps
-  *                         until there is a character available.
+  * Returns the first byte from the RX buffer or -1 if no data is available.
   */
-  //% shim=serial::readChar
-  export function readChar(mode: SerialMode): number  { return -1 }
+  //% shim=serial::read
+  export function read(): number  { return -1 }
 
 
   /**
-  * Returns the number of currently available characters in the serial read buffer.
+  * Returns the number of currently available bytes in the RX buffer.
   */
   //% shim=serial::available
   export function available(): number { return 0 }

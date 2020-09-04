@@ -5,8 +5,8 @@ using namespace pxt;
 namespace serial {
 
 //%
-int readChar(MicroBitSerialMode mode) {
-    int res = uBit.serial.read(mode);
+int read() {
+    int res = uBit.serial.read(MicroBitSerialMode::ASYNC);
     if (res >= 0) {
         return res;
     } else {
