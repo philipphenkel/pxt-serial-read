@@ -4,12 +4,11 @@ using namespace pxt;
 
 namespace serial {
 
-/**
- * Send a piece of text through the serial connection.
- */
+//%
 int write(String text) {
-    if (!text)
-        return;
+    if (!text) {
+        return MICROBIT_INVALID_PARAMETER;
+    }
     return uBit.serial.send(MSTR(text), MicroBitSerialMode::SYNC_SPINWAIT);
 }
 
